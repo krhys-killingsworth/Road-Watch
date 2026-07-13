@@ -1,0 +1,16 @@
+# RoadWatch dataset config for Ultralytics YOLO
+# Matches the Roboflow Universe RDD2022 mirror used in this project
+# (road-condition-detection-zr4jv/rdd2022-22jrg, YOLO export).
+# The export ships its own data.yaml; this file mirrors it for reference/local runs.
+# Class names verified by visual audit (the export shipped unnamed classes 0-4).
+
+path: ../data          # dataset root (adjust to your download location)
+train: train/images    # Roboflow layout: split/images, split/labels
+val: valid/images
+
+names:
+  0: longitudinal_crack   # D00
+  1: transverse_crack     # D10
+  2: alligator_crack      # D20
+  3: pothole              # D40
+  4: repair               # patched asphalt (mirror-specific 5th class)

@@ -1,0 +1,22 @@
+# RoadWatch — core dependencies
+# Fine-tuning YOLO11 on RDD2022. Install with:  pip install -r requirements.txt
+
+ultralytics>=8.3.0        # YOLO11 train / val / predict / export
+torch>=2.1.0              # deep-learning backend (GPU build via Colab/Kaggle)
+torchvision>=0.16.0
+
+# data handling & EDA
+numpy>=1.26.0
+pandas>=2.1.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+Pillow>=10.0.0
+opencv-python>=4.9.0
+pyyaml>=6.0
+
+# annotation format conversion (VOC XML -> YOLO txt)
+lxml>=5.0.0
+tqdm>=4.66.0
+
+# optional: pull the YOLO-format dataset from Roboflow Universe
+# roboflow>=1.1.0
